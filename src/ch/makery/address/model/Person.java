@@ -45,6 +45,12 @@ public class Person {
 		this.firstName.set(firstName);
 	}
 
+	@Override
+	public String toString() {
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", active=" + active + ", active2="
+				+ active2 + "]";
+	}
+
 	public StringProperty firstNameProperty() {
 		return firstName;
 	}
@@ -72,7 +78,7 @@ public class Person {
 	public BooleanProperty activeProperty() {
 		return active;
 	}
-	
+
 	public Boolean getActive2() {
 		return active2.get();
 	}

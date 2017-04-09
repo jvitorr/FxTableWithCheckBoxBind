@@ -21,26 +21,19 @@ public class MainApp extends Application {
 	/**
 	 * The data as an observable list of Persons.
 	 */
-	private ObservableList<Person> personData = FXCollections.observableArrayList();
+	
 
 	/**
 	 * Constructor
 	 */
-	public MainApp() {
-		// Add some sample data
-		personData.add(new Person("Hans", "Muster", false, false));
-		personData.add(new Person("Ruth", "Mueller", false, false));
-
-	}
+	
 
 	/**
 	 * Returns the data as an observable list of Persons.
 	 * 
 	 * @return
 	 */
-	public ObservableList<Person> getPersonData() {
-		return personData;
-	}
+	
 
 	@Override
 	public void start(Stage primaryStage) {
